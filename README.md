@@ -1,1 +1,1 @@
-# Ruman-Resource-Analitics
+# Human-Resource-Analitics
