@@ -1,6 +1,6 @@
 # Carregando as bibliotecas
-from math import prod
-from turtle import color
+# from math import prod
+# from turtle import color
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -99,4 +99,4 @@ plt.scatter(x=[satisfaction]
 
 plt.title("Grupos de Colaboradores - Satisfação vs Avaliação")
 plt.show()
-plt.pyplot(fig)
+st.pyplot(fig)
