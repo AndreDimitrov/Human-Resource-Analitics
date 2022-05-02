@@ -42,13 +42,13 @@ st.dataframe(dataset.drop("turnover",axis=1).head())
 # grupos de empregados.
 kmeans_colors = ['green' if c == 0 else 'red' if c == 1 else 'blue' for c in model_cluster.labels_]
 
-st.sidebar.subheader("Defina os atributos do empregado para predição de turnover")
+st.sidebar.subheader("Defina os atributos do Colaborador para predição de turnover")
 
 # mapeando dados do usuário para cada atributo
-satisfaction = st.sidebar.number_input("satisfaction", value=dataset["satisfaction"].mean())
-evaluation = st.sidebar.number_input("evaluation", value=dataset["evaluation"].mean())
-averageMonthlyHours = st.sidebar.number_input("averageMonthlyHours", value=dataset["averageMonthlyHours"].mean())
-yearsAtCompany = st.sidebar.number_input("yearsAtCompany", value=dataset["yearsAtCompany"].mean())
+satisfaction = st.sidebar.number_input("Satisfação", value=dataset["satisfaction"].mean())
+evaluation = st.sidebar.number_input("Avaliação", value=dataset["evaluation"].mean())
+averageMonthlyHours = st.sidebar.number_input("Horas Médias Mensais ( 3 últimos meses )", value=dataset["averageMonthlyHours"].mean())
+yearsAtCompany = st.sidebar.number_input("Anos na Organização", value=dataset["yearsAtCompany"].mean())
 
 # inserindo um botão na tela
 btn_predict = st.sidebar.button("Realizar Classificação")
