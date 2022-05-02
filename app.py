@@ -4,7 +4,6 @@ import streamlit as st
 from minio import Minio
 import joblib
 import matplotlib.pyplot as plt
-from minio import Minio
 from pycaret.classification import load_model, predict_model
 
 #Baixando os aquivos do Data Lake
